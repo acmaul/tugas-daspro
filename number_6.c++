@@ -3,9 +3,7 @@
 // 1 tahun=365 hari, 1 bulan=30 hari. Keluaran (tahun, bulan, hari) ditampilkan ke layar.
 
 #include <iostream>
-
 using namespace std;
-
 struct Time {
 	int tahun;
 	int bulan;
@@ -29,9 +27,7 @@ int main(){
 	// Sisa hari dari bulan tersebut
 	waktu_proyek.hari = sisa % 30;
 
-	cout << "Proyek tersebut dikerjakan selama " << waktu_proyek.tahun << " tahun + " << waktu_proyek.bulan << " bulan + " << waktu_proyek.hari << " hari" << endl;
-
-
+	cout << "Proyek tersebut dikerjakan selama " << waktu_proyek.tahun << " tahun, " << waktu_proyek.bulan << " bulan, dan " << waktu_proyek.hari << " hari" << endl;
 
 	return 0;
 }

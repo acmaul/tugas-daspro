@@ -24,7 +24,7 @@ int main(){
 	
 	sisa = jarak_tempuh % 100000;
 
-	// Konversi dari CM ke M
+	// Konversi dari sisa CM ke M
 	jarak_semut.m = sisa / 100;
 
 	// Sisa CM

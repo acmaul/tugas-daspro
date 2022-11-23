@@ -9,7 +9,7 @@
 using namespace std;
 
 int main(){
-	int tinggi_badan, berat_badan_ideal;
+	float tinggi_badan, berat_badan_ideal;
 	cout << "Masukkan tinggi badan dalam cm: "; 
 	cin >> tinggi_badan;
 	berat_badan_ideal = (tinggi_badan - 100) - ((tinggi_badan - 100) * 0.1);

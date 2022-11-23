@@ -39,5 +39,5 @@ int main(){
 	} else {
 		cout << "Format jam yang anda masukkan salah" << endl;
 	}
-
+	return 0;
 }

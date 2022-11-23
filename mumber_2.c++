@@ -7,30 +7,30 @@
 
 using namespace std;
 
-// Create struct to store distance
+// Buat struct untuk menyimpan satuan jarak
 struct Distance {
-    int km;
-    int m;
-    int cm;
+	int km;
+	int m;
+	int cm;
 };
 
 int main(){
-    Distance jarak_semut;
-    int sisa, jarak_tempuh;
-    cout << "Masukkan jarak semut dalam cm: "; cin >> jarak_tempuh;
+	Distance jarak_semut;
+	int sisa, jarak_tempuh;
+	cout << "Masukkan jarak semut dalam cm: "; cin >> jarak_tempuh;
 
-    //  Konversi dari CM ke KM
-    jarak_semut.km = jarak_tempuh / 100000;
-    
-    sisa = jarak_tempuh % 100000;
-    // Konversi dari CM ke M
-    jarak_semut.m = sisa / 100;
+	//  Konversi dari CM ke KM
+	jarak_semut.km = jarak_tempuh / 100000;
+	
+	sisa = jarak_tempuh % 100000;
 
-    // Sisa CM
-    jarak_semut.cm = sisa % 100;
+	// Konversi dari CM ke M
+	jarak_semut.m = sisa / 100;
 
-    cout << "Semut menempuh jarak sejauh " << jarak_semut.km << "km + " << jarak_semut.m << "m + " << jarak_semut.cm << "cm" << endl;
+	// Sisa CM
+	jarak_semut.cm = sisa % 100;
 
-    /* code */
-    return 0;
+	cout << "Semut menempuh jarak sejauh " << jarak_semut.km << "km + " << jarak_semut.m << "m + " << jarak_semut.cm << "cm" << endl;
+
+	return 0;
 }

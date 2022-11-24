@@ -33,7 +33,6 @@ int main(){
 		if (waktu.hh == 24){
 			waktu.hh = 00;
 		}
-		// cout << "Setelah ditambah satu detik maka jam selanjutnya adalah " << waktu.hh << ":" << waktu.mm << ":" << waktu.ss << endl;
 		// cout dengan prefix angka 0 jika angka tersebut 1 digit
 		cout << "Setelah ditambah satu detik maka jam selanjutnya adalah " << setw(2) << setfill('0') << waktu.hh << ":" << setw(2) << setfill('0') << waktu.mm << ":" << setw(2) << setfill('0') << waktu.ss << endl;
 	} else {

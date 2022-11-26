@@ -6,15 +6,15 @@
 
 using namespace std;
 
-struct Date {
+typedef struct {
     int dd;
     int mm;
     int yy;
-};
+} Date;
 
 int main(){
-    Date tanggal1, tanggal2;
-    int selisihHari, selisihTahun, selisihBulan, totalHari;
+    Date tanggal1, tanggal2, selisih;
+    int totalHari;
 
     cout << "Masukkan tanggal pertama (dd:mm:yy): " << endl;
     cout << "Masukkan tanggal pertama (dd): ";
@@ -36,10 +36,10 @@ int main(){
     bool validasiTanggal = tanggal1.dd >= 1 && tanggal1.dd <= 30 && tanggal2.dd >= 1 && tanggal2.dd <= 30;
 
     if (validasiBulan && validasiTanggal){
-        selisihTahun = tanggal2.yy - tanggal1.yy;
-        selisihBulan = tanggal2.mm - tanggal1.mm;
-        selisihHari = tanggal2.dd - tanggal1.dd;
-        totalHari = selisihTahun * 365 + selisihBulan * 30 + selisihHari;
+        selisih.yy = tanggal2.yy - tanggal1.yy;
+        selisih.mm = tanggal2.mm - tanggal1.mm;
+        selisih.dd = tanggal2.dd - tanggal1.dd;
+        totalHari = selisih.yy * 365 + selisih.mm * 30 + selisih.dd;
 
         cout << "Jarak antara tanggal " << tanggal1.dd << ":" << tanggal1.mm << ":" << tanggal1.yy << " dan tanggal " << tanggal2.dd << ":" << tanggal2.mm << ":" << tanggal2.yy << " adalah " << totalHari << " hari" << endl;
     } else {

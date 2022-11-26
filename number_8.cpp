@@ -7,11 +7,11 @@
 
 using namespace std;
 
-struct Time {
+typedef struct {
     int hh;
     int mm;
     int ss;
-};
+} Time;
 
 
 int main(){

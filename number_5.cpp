@@ -5,12 +5,12 @@
 
 using namespace std;
 
-struct Waktu {
+typedef struct {
     int detik;
     int menit;
     int jam;
     int hari;
-};
+} Waktu;
 
 int main(){
     Waktu w;

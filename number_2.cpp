@@ -8,11 +8,11 @@
 using namespace std;
 
 // Buat struct untuk menyimpan satuan jarak
-struct Distance {
+typedef struct {
 	int km;
 	int m;
 	int cm;
-};
+} Distance;
 
 int main(){
 	Distance jarak_semut;

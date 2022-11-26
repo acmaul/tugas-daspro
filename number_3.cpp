@@ -6,12 +6,12 @@
 
 using namespace std;
 
-struct Panjang {
+typedef struct {
     float meter;
     float inchi;
     float kaki;
     float yard;
-};
+} Panjang;
 
 int main(){
     Panjang p;

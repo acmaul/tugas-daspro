@@ -4,11 +4,11 @@
 
 #include <iostream>
 using namespace std;
-struct Time {
+typedef struct {
 	int tahun;
 	int bulan;
 	int hari;
-};
+} Time;
 
 int main(){
 	Time waktu_proyek;

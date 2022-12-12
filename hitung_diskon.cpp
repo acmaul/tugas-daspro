@@ -17,7 +17,7 @@ int main()
 	} else if ((total_pembelian >= 10000) && (total_pembelian <= 50000)){
 		diskon = total_pembelian * 0.10;
 		cout << "Selamat anda mendapatkan diskon 10%" << endl;
-	} else if ((total_pembelian > 0) && (total_pembelian < 10000)){
+	} else if (total_pembelian < 10000){
 		diskon = 0;
 		cout << "Maaf anda tidak mendapatkan diskon" << endl;
 	} else {
